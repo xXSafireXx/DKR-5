@@ -59,6 +59,7 @@ def countSort(x,z):
 def conv():
  f=open('text.txt')
  y=f.read()
+ g=y
  y=y.split(' ')
  x=[]
  for i in range(len(y)):
@@ -87,6 +88,15 @@ def conv():
     clear()
     print('спасибо воспользовались этой программой')
     input()
+    k=''
+    l=''
+    for i in range(len(x1)):
+        k+=str(o[i])+' '
+        l+=str(o[i])+' '
+    f.close()
+    f=open('text.out.txt','w')
+    f.write(k+'\n')
+    f.write(l+'\n')
     f.close()
 conv()
 
